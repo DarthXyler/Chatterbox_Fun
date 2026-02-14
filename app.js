@@ -4,7 +4,7 @@ let selectedColor = null;
 let selectedNumber = null;
 let fortunes = [];
 let jokes = [];
-const JOKE_WEIGHT = 0.6; // 60% jokes, 40% fortunes
+const JOKE_WEIGHT = 0.8; // 80% jokes, 20% fortunes
 
 // DOM element references
 let statusEl, retryBtn;
