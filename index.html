@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatterbox Fortune Teller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="app">
+            <h1>Chatterbox Fortune Teller</h1>
+            <p class="subtitle">Pick a color, then a number, and discover your fortune or a silly joke!</p>
+            
+            <div id="status" aria-live="polite" role="status"></div>
+            
+            <section id="step-pick-color" class="hidden">
+                <h2>Pick a color</h2>
+                <div class="color-buttons">
+                    <button class="color-btn" data-color="red" aria-label="Pick red">
+                        Red
+                    </button>
+                    <button class="color-btn" data-color="green" aria-label="Pick green">
+                        Green
+                    </button>
+                    <button class="color-btn" data-color="yellow" aria-label="Pick yellow">
+                        Yellow
+                    </button>
+                    <button class="color-btn" data-color="blue" aria-label="Pick blue">
+                        Blue
+                    </button>
+                </div>
+            </section>
+            
+            <section id="step-pick-number" class="hidden">
+                <h2>Pick a number</h2>
+                <div class="number-buttons" id="number-buttons-container">
+                    <!-- Number buttons will be dynamically generated here -->
+                </div>
+            </section>
+            
+            <section id="step-reveal" class="hidden">
+                <div class="reveal-card">
+                    <h2 id="reveal-title" tabindex="-1"></h2>
+                    <div id="reveal-text" aria-live="polite" role="status"></div>
+                    <p class="reveal-selection" id="reveal-selection"></p>
+                    <button id="play-again-btn" aria-label="Play again">Play again</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Made for fun, share with friends.</p>
+    </footer>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
